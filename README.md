@@ -17,3 +17,7 @@ The csv file will get downloaded within sometime, depending upon file size
 Now you are ready the use it locally!!
 
 import requests import pandas as pd url = '{(copied url here)}' res = requests.get(url, allow_redirects=True) with open('download_file_name.csv','wb') as file: file.write(res.content) download_file_name = pd.read_csv('download_file_name.csv')
+
+- This project uses the GitHub API to retrieve data on GitHub users in Paris with over 200 followers.
+- The most surprising insight: Many highly-followed developers have repositories in languages such as Ruby and Python.
+- Recommendation: Developers should consider creating repositories with detailed README
